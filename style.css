@@ -1,0 +1,410 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+}
+.h1 {
+  font-size: 2rem;
+}
+.h2 {
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 1366px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section {
+  padding: 30px 0;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+.metadesignmargin {
+  margin: 0 10px;
+}
+.logo p {
+  font-size: 0.625em;
+  color: gray;
+}
+a {
+  text-decoration: none;
+}
+.logo a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.humburgermenu {
+  display: none;
+}
+.humburgermenu img {
+  width: 20px;
+}
+.toggleCross{
+  position: absolute;
+  top: 10px;
+  left: 290px;
+  display: none;
+}
+.toggleCross img{
+  width: 15px;
+}
+.menu > li {
+  display: inline-block;
+}
+.menu > li > a {
+  padding: 40px 10px;
+}
+.menu > li > a i {
+  margin-left: 5px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+}
+.sub-menu li a {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-menu li a:hover {
+  background-color: #f5f5f5;
+}
+.sub-menu li {
+  position: relative;
+}
+.menu-lvl-2 {
+  right: -200px;
+  top: 0;
+}
+nav ul li a:hover {
+  color: #a435f0;
+}
+
+.search-icon i {
+  color: #a435f0;
+}
+.search-icon i {
+  font-size: 1rem;
+}
+.sub-menu {
+  display: none;
+  max-width: 200px;
+  background-color: white;
+  border-top: 3px solid #a435f0;
+  position: absolute;
+}
+
+.menu li:hover > .sub-menu {
+  display: block;
+}
+input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.search-container {
+  display: none;
+}
+.searchflex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+#closesearch :hover {
+  cursor: pointer;
+}
+/* section style */
+.banner-section {
+  width: 100%;
+  background-color: black;
+}
+.banner {
+  padding: 30px 0;
+}
+.banner h1 {
+  color: white;
+  padding: 30px 0;
+}
+
+.bannerpara {
+  color: white;
+  padding-top: 40px 0;
+}
+
+.contact-button {
+  padding-top: 30px;
+}
+.contact-button :hover {
+  background-color: white;
+  color: #a435f0;
+  cursor: pointer;
+}
+
+.contact-button button {
+  width: 150px;
+  padding: 12px;
+  background-color: #a435f0;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Trending article style */
+.trending-articles-section {
+  padding: 40px;
+}
+.heading h2 {
+  padding-bottom: 20px;
+}
+.articleMain {
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+}
+.meta {
+  background-color: black;
+  color: white;
+  width: fit-content;
+}
+.first-wrapper {
+  width: 50%;
+  background-image: url(design-system.jpg.webp);
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.first-wrapper-textcontent {
+  padding: 5px 5px;
+}
+.first-wrapper-textcontent h2 {
+  color: white;
+  font-size: 32px;
+}
+.first-wrapper-textcontent {
+  padding-left: 10px;
+}
+.first-wrapper-textcontent p {
+  color: white;
+}
+.second-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.textcontent {
+  padding: 15px 10px;
+  background-color: #fcf7ff;
+}
+.textcontent h2 {
+  font-size: 20px;
+}
+.textcontent p {
+  font-size: 16px;
+  line-height: 0.98;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.headingShopify {
+  margin: 10px 0px;
+}
+.swmain {
+  display: flex;
+  min-height: 50%;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+.swmainimg {
+  width: 50%;
+}
+.swmainimg img {
+  width: 100%;
+}
+.swtext {
+  width: 50%;
+  color: black;
+}
+
+/* section designs */
+.design-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.design-heading a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #4169e1;
+}
+.designsystemtext {
+  padding: 15px 15px 45px 15px;
+}
+.dateandicon {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.dateandicon i {
+  padding-right: 10px;
+}
+.dateandicon span {
+  padding-right: 10px;
+}
+.maindesignwrapper {
+  display: flex;
+  column-gap: 20px;
+}
+.designsystem {
+  width: 33%;
+}
+.designsystemimg img {
+  width: 100%;
+}
+.designsystemtext {
+  color: black;
+  background-color: #fcf7ff;
+}
+
+.designsystemtext p {
+  font-size: 20px;
+}
+/* footer */
+.footer {
+  background-color: black;
+}
+.footermain {
+  display: flex;
+  align-items: start;
+  color: white;
+  padding: 70px 0;
+}
+.uxaddaiconimg img {
+  width: 200px;
+}
+.footermain h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.footermain ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footermain ul li {
+  margin-bottom: 10px;
+}
+.footermain ul a {
+  text-decoration: none;
+  color: white;
+}
+.footermain ul a:hover {
+  color: #a435f0;
+}
+.uxaddaiconimg,
+.categories,
+.company,
+.contactus {
+  flex: 1;
+}
+.copyright {
+  background-color: white;
+}
+.maincopyright {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.socialicons i {
+  padding-left: 30px;
+  font-size: 22px;
+}
+.socialicons a {
+  color: black;
+}
+.socialicons a:hover {
+  color: #a435f0;
+}
+.mobileMenu{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation{
+    display: none;
+  }
+  .logo, .search-icon {
+    display: none;
+  }
+  .mobileMenu{
+    display: inline-block;
+  }
+  .humburgermenu {
+    display: inline-block;
+  }
+  .mobileMenu{
+    background-color: red;
+  }
+  .mobileNav-overlay {
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    z-index: 999;
+    
+  }
+  .mobileNav{
+    background-color: #fff;
+    width:90vw;
+    height: 100%;
+  }
+  .mobileNav ul.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .navigation.show-Menu{
+    transform: translateX(0);
+  }
+  .toggleCross{
+    display: block;
+  }
+}
+
